@@ -1,0 +1,68 @@
+/* A propriedade box-sizing permite incluir o padding e margin na
+largura e altura total do elemento */
+body {margin-left:0;}
+* {box-sizing:  border-box;}
+#ecra {margin-top:5px; }
+
+
+
+ul li {display:inline;}
+nav {top:0px; position:fixed;
+    background-color:#5390D9;color:white;padding:10px;width:100%;}
+	
+li {border-right:2px solid #bbb;}
+
+li a {text-decoration:none; color:yellow;
+			padding:8px 20px;}
+			
+			li a:link {color:white;}
+			li a:visited {color:#b4fadc;}
+			li a:hover {color:white; font-size:120%;background-color:#5390D9;}
+			li a:active {color:white;background-color:#5390D9;}
+			
+#imagem img {display:block;margin:auto;
+             padding:2vw;width:70%;}
+			 
+#galeria img {width:25%;padding:1vw;}
+
+#imagem h2 {background-color:#5390D9; text-align:center;color:white;padding:10px;
+margin:auto;width:80%;}
+
+
+.linha {display:block; text-align:center;}
+ h1 {background-color:#5390D9; text-align:center;color:white;padding:10px;
+     margin:auto;width:80%;}
+#im1:hover {transform:scale(1.5);}
+#im2:hover {transform:scale(1.5);}
+
+#contactos img {width:40%;margin-left:10vw;}
+
+#contactos p {width:40%; padding-left:3vw;margin-top:5vh;color:black; }
+
+#contactos img, #contactos p {float:left;}
+	
+#imagem, #ecra1, #ecra2{padding-bottom:80vh;}
+
+@media only screen and (max-width: 950px) {
+	
+	
+	#contactos img {width:30%;}
+	
+	#contactos p {width:50%;margin-top:0;margin-left:0;}
+	#contactos img, #contactos p {float:left;}
+	
+}
+
+
+@media only screen and (max-width: 650px) {
+	#ecra {width:100%;}
+	#imagem img  {width:80%;}
+	#galeria img {width:90%;display:block;margin:auto;}
+	#contactos img {width:80%;margin-left:10%;}
+	#um,#dois,#tres {margin-left:10%;}
+	#contactos p {width:100%;}
+	#contactos img, #contactos p {clear:left;}
+	
+}
+
+footer p {color:black; text-align:center;}
